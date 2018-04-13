@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView
+        android:id="@+id/tvAboutApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:text="Steps:\n   1. Select the type of computation you want from the navigation drawer.
+\n   2. Insert the required values. \n   3. Then press the 'Compute' button. The result will be displayed at the result
+ field, below the 'Compute' button. \n  \n  \nNote: \n   1. All non relevant cells should
+be filled with a zero (0) value, otherwise an error message will pop up. \n   2. The values of α, λ and Nq* (Meyerhof's Method)
+can be given or can be filled zero (0) value so that the App will determine it by itself."/>
+
+    </RelativeLayout>
+</ScrollView>

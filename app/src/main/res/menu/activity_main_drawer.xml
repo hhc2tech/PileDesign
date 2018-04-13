@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Pile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_qp_meyerhof"
+                    android:title="Meyerhof's Method for Qp" />
+                <item
+                    android:id="@+id/nav_qp_vesic"
+                    android:title="Vesic's Method for Qp" />
+                <item
+                    android:id="@+id/nav_qp_coyle_and_castello"
+                    android:title="Coyle and Castello's Method for Qp" />
+                <item
+                    android:id="@+id/nav_qs_meyerhof"
+                    android:title="Meyerhof's Method for Qs" />
+                <item
+                    android:id="@+id/nav_qs_coyle_and_castello"
+                    android:title="Coyle and Castello's Method for Qs" />
+                <item
+                    android:id="@+id/nav_qs_lambda"
+                    android:title="λ Method for Qs" />
+                <item
+                    android:id="@+id/nav_qs_alpha"
+                    android:title="α Method for Qs" />
+                <item
+                    android:id="@+id/nav_qs_beta"
+                    android:title="β Method for Qs" />
+                <item
+                    android:id="@+id/nav_qp_rock"
+                    android:title="Qp for Rock" />
+                <item
+                    android:id="@+id/nav_group_efficiency"
+                    android:title="Group Efficiency"/>
+                <item
+                    android:id="@+id/nav_group_capacity_saturated_clay"
+                    android:title="Group Capacity of Saturated Clay"/>
+                <item
+                    android:id="@+id/nav_group_settlement"
+                    android:title="Group Settlement"/>
+                <item
+                    android:id="@+id/nav_negative_skin_friction"
+                    android:title="Negative Skin Friction"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Sheet Pile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_cantilever_in_sand"
+                    android:title="Cantilever Sheet Pile in Sand" />
+                <item
+                    android:id="@+id/nav_cantilever_in_clay"
+                    android:title="Cantilever Sheet Pile in Clay" />
+                <item
+                    android:id="@+id/nav_anchored_in_sand"
+                    android:title="Anchored Sheet Pile in Sand" />
+                <item
+                    android:id="@+id/nav_anchored_in_clay"
+                    android:title="Anchored Sheet Pile in Clay" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

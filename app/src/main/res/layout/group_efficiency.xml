@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <TextView
+        android:id="@+id/tvEquation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="30dp"
+        android:text="Select Formula" />
+
+        <Spinner
+            android:id="@+id/spEquation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spEquation_item"
+            android:layout_alignBaseline="@+id/tvEquation"
+            android:layout_alignLeft="@+id/etN1"
+            android:layout_alignRight="@+id/etN1" />
+
+        <TextView
+            android:id="@+id/tvPileType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_below="@+id/tvEquation"
+            android:layout_marginTop="30dp"
+            android:text="Pile Type" />
+
+        <Spinner
+            android:id="@+id/spPileType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spPileType_item"
+            android:layout_alignBaseline="@+id/tvPileType"
+            android:layout_alignLeft="@+id/etN1"
+            android:layout_alignRight="@+id/etN1" />
+
+        <TextView
+            android:id="@+id/tvN1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/tvPileType"
+            android:text="n1 (L direction)" />
+
+        <EditText
+            android:id="@+id/etN1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvN1"
+            android:layout_marginLeft="195dp"
+            android:ems="6"
+            android:inputType="number|numberDecimal" />
+
+        <TextView
+            android:id="@+id/tvN2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/tvN1"
+            android:text="n2 (B direction)" />
+
+        <EditText
+            android:id="@+id/etN2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvN2"
+            android:layout_marginLeft="195dp"
+            android:ems="6"
+            android:inputType="number|numberDecimal" />
+
+        <TextView
+            android:id="@+id/tvCrossSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/tvN2"
+            android:text="Cross Section, D (m)" />
+
+        <EditText
+            android:id="@+id/etCrossSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvCrossSection"
+            android:layout_marginLeft="195dp"
+            android:ems="6"
+            android:inputType="number|numberDecimal" />
+
+        <TextView
+            android:id="@+id/tvSpacing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/tvCrossSection"
+            android:text="Spacing (m)" />
+
+        <EditText
+            android:id="@+id/etSpacing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvSpacing"
+            android:layout_marginLeft="195dp"
+            android:ems="6"
+            android:inputType="number|numberDecimal" />
+
+        <Button
+            android:id="@+id/btnCompute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSpacing"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="Compute"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"/>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnCompute"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:text="Result Field" />
+    </RelativeLayout>
+</ScrollView>

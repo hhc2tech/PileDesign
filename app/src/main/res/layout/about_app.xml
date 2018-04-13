@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivAboutApp"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:background="@mipmap/ic_about_app"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+        android:id="@+id/tvAboutApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ivAboutApp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="This App is developed as a supportive material for the course 'Foundation Engineering II'."/>
+
+        <TextView
+            android:id="@+id/tvAboutApp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/tvAboutApp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:text="Email: ayennew@gmail.com"/>
+
+        <TextView
+        android:id="@+id/tvAboutApp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvAboutApp2"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Addis Ababa Science and Technology University, 2017" />
+
+    </RelativeLayout>
+</ScrollView>

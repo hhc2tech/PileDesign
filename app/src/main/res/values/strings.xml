@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Pile Design</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="spPileType_item">
+        <item>Circular</item>
+        <item>Square</item>
+    </string-array>
+
+    <string-array name="spFillType_item">
+        <item>Clay Fill Over Granular Soil</item>
+        <item>Granular Fill Over Clay Soil</item>
+    </string-array>
+
+    <string-array name="spSoilType_item">
+        <item>Sand</item>
+        <item>Clay</item>
+    </string-array>
+
+    <string-array name="spNoOfSoilLayers_item">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+    </string-array>
+
+    <string-array name="spNoOfSoilLayers2_item">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+    </string-array>
+
+    <string-array name="spEquation_item">
+        <item>Ordinary</item>
+        <item>Converse–Labarre</item>
+        <item>Los Angeles Group Action</item>
+    </string-array>
+
+    <string name="how_to_use">How to Use</string>
+    <string name="about_app">About</string>
+</resources>

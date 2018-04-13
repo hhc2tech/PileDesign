@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvPileType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:text="Pile Type" />
+
+        <Spinner
+            android:id="@+id/spPileType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvPileType"
+            android:layout_alignLeft="@+id/etLength"
+            android:layout_alignRight="@+id/etLength"
+            android:entries="@array/spPileType_item" />
+
+        <TextView
+            android:id="@+id/tvSoilType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPileType"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:text="Soil Type" />
+
+        <Spinner
+            android:id="@+id/spSoilType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvSoilType"
+            android:layout_alignLeft="@+id/etLength"
+            android:layout_alignRight="@+id/etLength"
+            android:entries="@array/spSoilType_item" />
+
+        <TextView
+            android:id="@+id/tvLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSoilType"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:text="Length (m)" />
+
+        <EditText
+            android:id="@+id/etLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvLength"
+            android:layout_marginLeft="195dp"
+            android:ems="6"
+            android:inputType="number|numberDecimal" />
+
+        <TextView
+            android:id="@+id/tvCrossSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLength"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:text="Cross Section, D (m)" />
+
+        <EditText
+            android:id="@+id/etCrossSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvCrossSection"
+            android:layout_marginLeft="195dp"
+            android:ems="6"
+            android:inputType="number|numberDecimal" />
+
+        <TextView
+            android:id="@+id/tvGama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCrossSection"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:text="Gama (kN/m3)" />
+
+        <EditText
+            android:id="@+id/etGama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvGama"
+            android:layout_marginLeft="195dp"
+            android:ems="6"
+            android:inputType="number|numberDecimal" />
+
+        <TextView
+            android:id="@+id/tvPhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvGama"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:text="Phi (Sand) (degree)" />
+
+        <EditText
+            android:id="@+id/etPhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvPhi"
+            android:layout_marginLeft="195dp"
+            android:ems="6"
+            android:inputType="number|numberDecimal" />
+
+        <TextView
+            android:id="@+id/tvNqs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPhi"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="30dp"
+            android:text="Nq*" />
+
+        <EditText
+            android:id="@+id/etNqs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvNqs"
+            android:layout_marginLeft="195dp"
+            android:ems="6"
+            android:inputType="number|numberDecimal" />
+
+        <TextView
+            android:id="@+id/tvCu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNqs"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="30dp"
+            android:text="Cu (Clay) (kPa)" />
+
+        <EditText
+            android:id="@+id/etCu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvCu"
+            android:layout_marginLeft="195dp"
+            android:ems="6"
+            android:inputType="number|numberDecimal" />
+
+        <Button
+            android:id="@+id/btnCompute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="Compute"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnCompute"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:text="Result Field" />
+    </RelativeLayout>
+</ScrollView>
